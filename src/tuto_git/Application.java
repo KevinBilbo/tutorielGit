@@ -19,6 +19,8 @@ public class Application extends Frame implements WindowListener{
 		modl.addObserver(vue);
 		vue.addActionListener(ctrl);
 		
+		this.addWindowListener(this);
+		
 		this.add(vue);
 		this.pack();
 		this.setVisible(true);
@@ -65,5 +67,6 @@ public class Application extends Frame implements WindowListener{
 		// TODO Auto-generated method stub
 		
 	}
+	
 
 }
